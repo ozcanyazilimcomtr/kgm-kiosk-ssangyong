@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "kgmkios.app"
-               BlueprintName = "kgmkios"
-               ReferencedContainer = "container:kgmkios.xcodeproj">
+               BuildableName = "KGMKiosk.app"
+               BlueprintName = "KGMKiosk"
+               ReferencedContainer = "container:KGMKiosk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "kgmkiosTests.xctest"
-               BlueprintName = "kgmkiosTests"
-               ReferencedContainer = "container:kgmkios.xcodeproj">
+               BuildableName = "KGMKioskTests.xctest"
+               BlueprintName = "KGMKioskTests"
+               ReferencedContainer = "container:KGMKiosk.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "kgmkios.app"
-            BlueprintName = "kgmkios"
-            ReferencedContainer = "container:kgmkios.xcodeproj">
+            BuildableName = "KGMKiosk.app"
+            BlueprintName = "KGMKiosk"
+            ReferencedContainer = "container:KGMKiosk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "kgmkios.app"
-            BlueprintName = "kgmkios"
-            ReferencedContainer = "container:kgmkios.xcodeproj">
+            BuildableName = "KGMKiosk.app"
+            BlueprintName = "KGMKiosk"
+            ReferencedContainer = "container:KGMKiosk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

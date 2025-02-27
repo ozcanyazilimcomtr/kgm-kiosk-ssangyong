@@ -2,20 +2,20 @@ export default {
   expo: {
     name: "KGM Kiosk",
     slug: "kgm-kios",
-    version: "1.0.0",
+    version: "1.3.0",
     orientation: "landscape",
     scheme: "kgm-kios",
-    icon: "./app_icon.jpeg",
+    icon: "./assets/app_icon.jpeg",
     userInterfaceStyle: "light",
     newArchEnabled: true,
     androidNavigationBar: {
       visible: "immersive",
     },
-    packagerOpts: {
-      config: "metro.config.js",
+    androidStatusBar: {
+      hidden: true,
     },
     splash: {
-      image: "./assets/splash-icon.png",
+      image: "./assets/app_icon.jpeg",
       resizeMode: "contain",
       backgroundColor: "#ffffff",
     },
@@ -25,13 +25,13 @@ export default {
     },
     android: {
       adaptiveIcon: {
-        foregroundImage: "./assets/adaptive-icon.png",
+        foregroundImage: "./assets/app_icon.jpeg",
         backgroundColor: "#ffffff",
       },
       package: "com.fcalisan.kgmkios",
     },
     web: {
-      favicon: "./assets/favicon.png",
+      favicon: "./assets/app_icon.jpeg",
     },
     plugins: [
       [
@@ -44,8 +44,15 @@ export default {
         },
       ],
       "expo-router",
-      "@react-native-tvos/config-tv",
       "expo-video",
+      [
+        "expo-navigation-bar",
+        {
+          position: "relative",
+          visibility: "hidden",
+          behavior: "inset-swipe",
+        },
+      ]
     ],
     extra: {
       router: {
