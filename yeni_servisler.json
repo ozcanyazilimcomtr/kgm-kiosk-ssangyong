@@ -1,0 +1,496 @@
+var locations = [{
+	"company_name": "YMY MALTEPE / ŞAHSUVAROĞLU",
+	"address": "Zümrütevler Mahallesi Acarlar Sokak No:3 Maltepe/İstanbul",
+	"lat": 40.92830479999999937490429147146642208099365234375,
+	"lng": 29.148951000000000277623257716186344623565673828125,
+	"phone": "+902164277373",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 17
+}, {
+	"company_name": "YMY ANKARA",
+	"address": "İçi Blokları Mah. Mevlana Bulvarı No:162 Çankaya/Ankara",
+	"lat": 39.895444400000002360684447921812534332275390625,
+	"lng": 32.8129162999999977046172716654837131500244140625,
+	"phone": "+903122292500",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 18
+}, {
+	"company_name": "YMY ANTALYA",
+	"address": "Göksu Mah. Gazi Bulvarı No:621 Antalya",
+	"lat": 36.911810099999996737096807919442653656005859375,
+	"lng": 30.735544600000000770023689256049692630767822265625,
+	"phone": "+902423395454",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 19
+}, {
+	"company_name": "YMY BURSA",
+	"address": "İzmir Yolu Üzeri 8.Km No:279 Bursa",
+	"lat": 40.21260929999999689243850298225879669189453125,
+	"lng": 28.92878879999999952588041196577250957489013671875,
+	"phone": "+902244431225",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 20
+}, {
+	"company_name": "YMY ÇORLU",
+	"address": "Zafer Mah. Önerler Mevkii E-5 İstanbul Yolu Üzeri Çorlu/Tekirdağ",
+	"lat": 41.1449951000000027079295250587165355682373046875,
+	"lng": 27.85322289999999867404767428524792194366455078125,
+	"phone": "+902826854960",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 21
+}, {
+	"company_name": "YMY ERZURUM",
+	"address": "Çağlayan Mah. Tortum Yolu Cad. No:134 Yakutiye/Erzurum",
+	"lat": 39.94210910000000325226210406981408596038818359375,
+	"lng": 41.2856167999999996709448168985545635223388671875,
+	"phone": "+904422424525",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 22
+}, {
+	"company_name": "YMY İZMİR",
+	"address": "Akçay Caddesi No: 64/1 İzmir",
+	"lat": 38.353920299999998633211362175643444061279296875,
+	"lng": 27.13424330000000139762050821445882320404052734375,
+	"phone": "+902322543425",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 23
+}, {
+	"company_name": "YMY ADANA",
+	"address": "Kavaklı Mah.Turhan Cemal Beriker Bulvarı No:696/A Adana",
+	"lat": 36.99557260000000269428710453212261199951171875,
+	"lng": 35.205585700000000315412762574851512908935546875,
+	"phone": "+903224410070",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 24
+}, {
+	"company_name": "YMY MERSİN",
+	"address": "Menderes Mah. Gazi Mustafa Kemal Bulvarı No: 789/A Mersin",
+	"lat": 36.7371559519169892382706166245043277740478515625,
+	"lng": 34.5169602334499359130859375,
+	"phone": "+903243588200",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 25
+}, {
+	"company_name": "YMY TRABZON",
+	"address": "Adnan Kahveci Bulvarı No:67 Söğütlü/Trabzon",
+	"lat": 41.01305599999999884630597080104053020477294921875,
+	"lng": 39.60777800000000326008375850506126880645751953125,
+	"phone": "+904622486565",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 26
+}, {
+	"company_name": "YMY TUZLA",
+	"address": "Aydıntepe Mah. E-5 Karayolu No:4 Tuzla/İstanbul",
+	"lat": 40.85632726263499847618732019327580928802490234375,
+	"lng": 29.28957223892199834835992078296840190887451171875,
+	"phone": "+902163927979",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 27
+}, {
+	"company_name": "YMY YENİBOSNA",
+	"address": "Çınar Caddesi No:34 Yenibosna/İstanbul",
+	"lat": 41.01587760000000315585566568188369274139404296875,
+	"lng": 28.81322910000000092622940428555011749267578125,
+	"phone": "+902124528000",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 28
+}, {
+	"company_name": "TUNCERHAN OTOMOTİV",
+	"address": "Gümüşcay Mah Adnan Menderes Blv No 33/c Merkezefendi/Denizli",
+	"lat": 37.8024622195730017892856267280876636505126953125,
+	"lng": 29.074284062543000572986784391105175018310546875,
+	"phone": "+902582643994",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 31
+}, {
+	"company_name": "NEZİROĞLU OTOMOTİV",
+	"address": "Eskişehir Yolu No:108/B Söğütözü / Ankara",
+	"lat": 39.90954599999999885540091781876981258392333984375,
+	"lng": 32.79337100000000049249138101004064083099365234375,
+	"phone": "+903122845252",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 32
+}, {
+	"company_name": "ALKANLAR OTOMOTİV",
+	"address": "Konacık Mahallesi, Konacık Sanayi Sitesi D Blok No:8 Bodrum/Muğla",
+	"lat": 37.05635000000000189857018995098769664764404296875,
+	"lng": 27.385245999999998645080268033780157566070556640625,
+	"phone": "+902523638279",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 33
+}, {
+	"company_name": "ÇELİK OTOMOTİV",
+	"address": "Cennetayağı mahallesi Alpaslan Türkeş bulvarı. No11/1 Edremit Balıkesir",
+	"lat": 39.5748231966694419270424987189471721649169921875,
+	"lng": 27.0396889682351826422745944000780582427978515625,
+	"phone": "(0266) 372 24 24",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 34
+}, {
+	"company_name": "OTOSTORE OTOMOTİV",
+	"address": "Barış Mah. 1019 Sok. No:50 Kayapınar/Diyarbakır",
+	"lat": 37.91358076674745092304874560795724391937255859375,
+	"lng": 40.11071126784550955335362232290208339691162109375,
+	"phone": "(0412) 502 60 97",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 35
+}, {
+	"company_name": "SUR OTOMOTİV",
+	"address": "Kervansaray Mah. 1973. Sk. No:2/4 Merkez/KIRŞEHİR",
+	"lat": 39.14913700000000318368620355613529682159423828125,
+	"lng": 34.17157300000000219597495743073523044586181640625,
+	"phone": "+903862527966",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 36
+}, {
+	"company_name": "GRUP İLBEY OTOMOTİV",
+	"address": "Yenişehir Mh. Ravza Cd. 1931 Sk. İlhan Apt. 47200 Artuklu/Mardin",
+	"lat": 37.3216833941296641796725452877581119537353515625,
+	"lng": 40.717975155019104249731753952801227569580078125,
+	"phone": "(0482) 212 49 00",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 37
+}, {
+	"company_name": "ANIL OTOMOTİV",
+	"address": "Mustafa Kemal Mah. İbrahim Karaoğlanoğlu Cad. No.80/A İskenderun / Hatay",
+	"lat": 36.56942099999999840065356693230569362640380859375,
+	"lng": 36.15754410000000262925823335535824298858642578125,
+	"phone": "+903266187700",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 43
+}, {
+	"company_name": "B MOTORS SİVAS",
+	"address": "Yeşilyurt Mah. Sultanşehir Blv. No 88/B  Merkez / SİVAS",
+	"lat": 39.7637059999999991077856975607573986053466796875,
+	"lng": 37.07790800000000075442585512064397335052490234375,
+	"phone": "0346 226 30 58",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 44
+}, {
+	"company_name": "AHİ GROUP OTOMOTİV",
+	"address": "Gülalibey Mah. 967 Sk. No: 28 Merkez / Erzincan",
+	"lat": 39.7402569999999997207851265557110309600830078125,
+	"lng": 39.4989360000000004902176442556083202362060546875,
+	"phone": "(0446) 214 75 88",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 45
+}, {
+	"company_name": "KONYA PRATİK OTOMOTİV",
+	"address": "Kottim İş Merkezi Fevzi Çakmak Mahallesi Çelik Caddesi No:8 Karatay/ KONYA",
+	"lat": 37.92049157148699833896898780949413776397705078125,
+	"lng": 32.5289114398029965968817123211920261383056640625,
+	"phone": "(0332) 238 63 26",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 48
+}, {
+	"company_name": "KONYA TAMİR BAKIM SERVİSİ (AHTAP OTO)",
+	"address": "Musalla Bağları Mahallesi Gürsesler Sk. Sefer A.Ş. Sitesi N:2 Selçuklu/Konya",
+	"lat": 37.89414604991299739822352421469986438751220703125,
+	"lng": 32.50109529200199887100097839720547199249267578125,
+	"phone": "(0332) 244 10 10",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 50
+}, {
+	"company_name": "ADAŞEN OTOMOTİV",
+	"address": "Adnan Menderes Cad. No: 143 Adapazarı / SAKARYA",
+	"lat": 40.7630199999999973670128383673727512359619140625,
+	"lng": 30.393640000000001322177922702394425868988037109375,
+	"phone": "(0264) 359 54 54",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 54
+}, {
+	"company_name": "AYHAN OTOMOTİV",
+	"address": "1.Sanayi Sitesi B Blok No: 9-10 Zonguldak",
+	"lat": 41.260503999999997404302121140062808990478515625,
+	"lng": 31.43792429999999882284100749529898166656494140625,
+	"phone": "+903723161896",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 55
+}, {
+	"company_name": "AYIK OTOMOTİV",
+	"address": "Mehmet Akif Ersoy Mh. Yeni Sanayi Girişi Halifelik Cad. No:1-2 Sivas",
+	"lat": 39.745730199999997012128005735576152801513671875,
+	"lng": 37.03502660000000190620994544588029384613037109375,
+	"phone": "+903462151208",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 56
+}, {
+	"company_name": "ÇETİN OTOMOTİV",
+	"address": "Taşyaka Mah. Yeni San. Sitesi 254. Sok. No:27 Muğla",
+	"lat": 36.623960699999997814302332699298858642578125,
+	"lng": 29.1349198999999998704879544675350189208984375,
+	"phone": "+902526145488",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 57
+}, {
+	"company_name": "GANİ KARDEŞLER",
+	"address": "Gülabi Bey Mah. 967.Sok. No:28-32 Bolu",
+	"lat": 40.737933900000001585794962011277675628662109375,
+	"lng": 31.625707399999999580586518277414143085479736328125,
+	"phone": "+903742158455",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 58
+}, {
+	"company_name": "GÜÇLÜ OTOMOTİV",
+	"address": "Ataşehir Mah. Malatya Cad. Cezaevi Sok. No: 289 Elazığ",
+	"lat": 38.6367539006489977282399195246398448944091796875,
+	"lng": 39.11860342883500152311171405017375946044921875,
+	"phone": "+904242471801",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 59
+}, {
+	"company_name": "GÜRCAN OTOMOTİV",
+	"address": "Atatürk Oto Sanayi Sitesi 1. Kısım A Blok No:78 Maslak/İstanbul",
+	"lat": 41.1155777000000028920112526975572109222412109375,
+	"lng": 29.02299500000000165300662047229707241058349609375,
+	"phone": "+902123462608",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 60
+}, {
+	"company_name": "KESKİN KARDEŞLER",
+	"address": "Toybelen Mah. Anadolu Bulvarı No:175 İç Kapı No: Z1 İlkadım/Samsun",
+	"lat": 41.37984407808900044756228453479707241058349609375,
+	"lng": 36.25619859875899919643416069447994232177734375,
+	"phone": "+903622665583",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 61
+}, {
+	"company_name": "OTOFORS OTOMOTİV",
+	"address": "Sümer Mah. 53. Sok. No:29 Merkezefendi/Denizli",
+	"lat": 37.800961000000000922227627597749233245849609375,
+	"lng": 29.09657899999999841611497686244547367095947265625,
+	"phone": "+902582666159",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 62
+}, {
+	"company_name": "ŞAHİN OTOMOTİV",
+	"address": "2.Küçük Sanayi Sitesi 6.Ada 4.Blok No: 5 Afyon",
+	"lat": 38.77581440000000156942405737936496734619140625,
+	"lng": 30.595285000000000508180164615623652935028076171875,
+	"phone": "+902722234545",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 63
+}, {
+	"company_name": "TÜREL OTOMOTİV",
+	"address": "Yeni Sanayi Sitesi 3.Cad 84.Sokak Kayseri",
+	"lat": 38.73323760000000248737705987878143787384033203125,
+	"lng": 35.44542750000000097543306765146553516387939453125,
+	"phone": "+903523325848",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 64
+}, {
+	"company_name": "UZMANN OTOMOTİV",
+	"address": "Kestel Mah. Semt Sahil Cad. 23 Z01 Alanya/Antalya",
+	"lat": 36.5190235000000029685907065868377685546875,
+	"lng": 32.05964089999999799829311086796224117279052734375,
+	"phone": "(0242) 515 16 18",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 65
+}, {
+	"company_name": "ALN OTOMOTİV",
+	"address": "Sarayatik, Cahit Dalokay Blv. No:2, 23100 Elazığ Merkez/Elazığ",
+	"lat": 38.6661583139670028685941360890865325927734375,
+	"lng": 39.2241074130759983518146327696740627288818359375,
+	"phone": "+904242185050",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 67
+}, {
+	"company_name": "ULAK OTOMOTIV",
+	"address": "SÜPHAN MAH. IPEKYOLU BLV. NO: 351 EDREMIT/ VAN",
+	"lat": 38.4576822906719968386823893524706363677978515625,
+	"lng": 43.33625540599899750304757617413997650146484375,
+	"phone": "(0432) 217 03 03",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 69
+}, {
+	"company_name": "ERKAYA OTOMOTİV",
+	"address": "ATAKENT MAH. 6052 SK. NO: 1 IÇ KAPI NO: 1 KARAKÖPRÜ / ŞANLIURFA",
+	"lat": 37.2342569999999994934114511124789714813232421875,
+	"lng": 38.79604499999999944748196867294609546661376953125,
+	"phone": "0850 281 6311",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 72
+}, {
+	"company_name": "ERKAYA OTOMOTİV",
+	"address": "KADIKENDİ MAH. 8728 CAD. NO: 20E EYYÜBİYE ŞANLIURFA",
+	"lat": 37.15071400000000068075678427703678607940673828125,
+	"lng": 38.71816100000000204772732104174792766571044921875,
+	"phone": "+908502816311",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 73
+}, {
+	"company_name": "ALN OTOMOTİV KAYSERİ",
+	"address": "Osman Kavuncu Mah.Osman Kavuncu Bulvarı No:197/A  Melikgazi KAYSERİ",
+	"lat": 38.7298008036326137926153023727238178253173828125,
+	"lng": 35.44661659670997977400475065223872661590576171875,
+	"phone": "+903523302023",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 76
+}, {
+	"company_name": "ALN OTOMOTİV KAYSERİ SERVİS",
+	"address": "Osman Kavuncu Mah. Kevser Cad. No:93D  Melikgazi KAYSERİ",
+	"lat": 38.72473363576200000579774496145546436309814453125,
+	"lng": 35.45525745437900155820898362435400485992431640625,
+	"phone": "+903523302023",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 77
+}, {
+	"company_name": "DURMAZ INVEST",
+	"address": "Fabrikalar Mah. Namık Kemal Bulvarı No:51A Kepez/ANTALYA",
+	"lat": 36.91689430571609165099289384670555591583251953125,
+	"lng": 30.673140767810014750693881069310009479522705078125,
+	"phone": "+902425040758",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 78
+}, {
+	"company_name": "OTOSTORE OTOMOTİV",
+	"address": "Turgut Özal Mahallesi Mardin Caddesi Mova AVM No:416 İç Kapı No:28 Kızıltepe/Mardin",
+	"lat": 37.23727266303183824902589549310505390167236328125,
+	"lng": 40.6375315101515326432490837760269641876220703125,
+	"phone": "+904826060689",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 79
+}, {
+	"company_name": "AKORT OTOMOTİV",
+	"address": "Sanayi Mah. 60704 Cad. No:25A Şehitkamil / Gaziantep",
+	"lat": 37.0895180377514890324164298363029956817626953125,
+	"lng": 37.41383868650463995209065615199506282806396484375,
+	"phone": "+905382132744",
+	"is_service": true,
+	"is_showroom": false,
+	"id": 80
+}, {
+	"company_name": "ÇİFTKURTLAR OTOMOTİV",
+	"address": "Maslak Mah. AOS 38. Sok. Çiftkurtlar Plaza Blok No:351 İç Kapı No:1 Sarıyer/İSTANBUL",
+	"lat": 41.11629313891256742863333784043788909912109375,
+	"lng": 29.023250196041370685406945995055139064788818359375,
+	"phone": "+902123462222",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 81
+}, {
+	"company_name": "ASAL OTOMOTİV",
+	"address": "Ayazağa Mah. Cendere Sok. No:5 Sarıyer / İSTANBUL",
+	"lat": 41.1094928482722394846859970130026340484619140625,
+	"lng": 28.990587173943229259975851164199411869049072265625,
+	"phone": "+902122898800",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 82
+}, {
+	"company_name": "UYARASLAN OTOMOTİV",
+	"address": "Sancak Mah. Dr. Sadık Ahmet Cad. No:21 Uyaraslan Plaza Selçuklu/Konya",
+	"lat": 37.948408596440998508114716969430446624755859375,
+	"lng": 32.5271497288349991094946744851768016815185546875,
+	"phone": "(0332) 255 33 99",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 83
+}, {
+	"company_name": "ÖZPAM OTOMOTİV",
+	"address": "Konacık Mah. Atatürk Bulvarı No:245/3 Bodrum/Muğla",
+	"lat": 37.05521178090617695488617755472660064697265625,
+	"lng": 27.374944081310257359973547863774001598358154296875,
+	"phone": "(0252) 313 22 66",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 84
+}, {
+	"company_name": "DMR OTOMOTİV",
+	"address": "Kirazlık Mah. Atatuörk Bulvarı No: 66 Tekkekoöy / Samsun",
+	"lat": 41.2478342735418124220814206637442111968994140625,
+	"lng": 36.3940286226966946969696437008678913116455078125,
+	"phone": "+903622705500",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 85
+}, {
+	"company_name": "ÜMİT ÜNL OTOMOTİV",
+	"address": "Alata Mah. Osman Çavuş Sk. No:60 Erdemli / Mersin",
+	"lat": 36.61723540330199710979286464862525463104248046875,
+	"lng": 34.3165604966410029419421334750950336456298828125,
+	"phone": "(0324) 515 96 40",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 86
+}, {
+	"company_name": "DURMAZ INVEST",
+	"address": "Kızlar Pınarı Mah. Çekiçoğlu sk. Gülcihan Apt. No:10 Alanya / Antalya",
+	"lat": 36.55663652329099733151451800949871540069580078125,
+	"lng": 31.98380609264300034055850119329988956451416015625,
+	"phone": "(0242) 504 55 07",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 87
+}, {
+	"company_name": "YMY KUMLUCA",
+	"address": "GÖKSU MAH AHMET ALİAĞA BULVARI 224 BB KUMLUCA ANTALYA",
+	"lat": 36.3347655052408953224585275165736675262451171875,
+	"lng": 30.276958081902467512236398761160671710968017578125,
+	"phone": "+905326776590",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 89
+}, {
+	"company_name": "METELER OTOMOTİV",
+	"address": "İslam Paşa Mah.Hopa Cad. NO:470  MERKEZ / RİZE",
+	"lat": 41.03305570947728853070657351054251194000244140625,
+	"lng": 40.5576445464029546883466537110507488250732421875,
+	"phone": "+904642133839",
+	"is_service": true,
+	"is_showroom": true,
+	"id": 90
+}, {
+	"company_name": "B MOTORS BURSA",
+	"address": "Panayır Mah. İstanbul Cad. No:379 Osmangazi / BURSA",
+	"lat": 40.42477891952669466490988270379602909088134765625,
+	"lng": 29.230299995410650382154926774092018604278564453125,
+	"phone": "+902242235858",
+	"is_service": false,
+	"is_showroom": true,
+	"id": 91
+}

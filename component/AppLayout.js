@@ -52,21 +52,6 @@ export default function AppLayout({ children }) {
         {children}
       </LinearGradient>
       <StatusBar hidden={true} />
-      <View
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: "50%",
-          right: 0,
-          height: 100,
-          transform: [{ translateX: -50 }],
-        }}
-      >
-        <Text style={{ fontSize: 12, color: "white" }}>
-          Özcan Teknoloji Yazılım Sanayi ve Ticaret Ltd. Şti. Tarafından
-          Geliştirilmiştir. Demo Versiyon
-        </Text>
-      </View>
     </>
   );
 }

@@ -4,7 +4,7 @@ export const torresModels = [
     slug: "torres_4x2",
     image: require("./kgm-uygulama-dosyalar/torres_mavi.png"),
     desc_item: ["Otomatik", "Benzinli", "4x2"],
-    desc: "₺1.910.000'den başlayan fiyatlarla",
+    desc: "₺2.198.700'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -235,7 +235,7 @@ export const torresModels = [
     slug: "torres_4x4",
     image: require("./kgm-uygulama-dosyalar/gorsel/torres4.png"),
     desc_item: ["Otomatik", "Benzinli", "4x4"],
-    desc: "₺2.130.000'den başlayan fiyatlarla",
+    desc: "₺2.418.700'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -466,20 +466,12 @@ export const torresModels = [
 
 export const torresPrices = [
   {
-    model: "4x2 1.5 GDI Turbo (2023 Model)",
-    price: "1.910.000",
+    model: "4x2 1.5 GDI Turbo (2025 Model)",
+    price: "2.198.700",
   },
-  {
-    model: "4x2 1.5 GDI Turbo (2024 Model)",
-    price: "2.160.000",
-  },
-  {
-    model: "4x4 1.5 GDI Turbo (2023 Model)",
-    price: "2.130.000",
-  },
-  {
-    model: "4x4 1.5 GDI Turbo (2024 Model)",
-    price: "2.380.000",
+   {
+    model: "4x4 1.5 GDI Turbo (2025 Model)",
+    price: "2.418.700",
   },
 ];
 

@@ -5,7 +5,7 @@ export const actyonModels = [
     slug: "actyon",
     image: require("./kgm-uygulama-dosyalar/actyon_1.png"),
     desc_item: ["Otomatik", "Benzinli", "4x4"],
-    desc: "₺2.750.000'den başlayan fiyatlarla",
+    desc: "₺2.758.700'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -267,13 +267,13 @@ export const actyonColors = [
 
 export const actyonPrices = [
   {
-    model: "1.5 Otomatik / Benzinli (2024 Model)",
-    price: "2.750.000",
+    model: "ACTYON 1.5 GDI Turbo Benzinli 4x4 A/T (2025)",
+    price: "2.758.700",
   },
   {
-    model: "1.5 Otomatik / Benzinli (2025 Model)",
-    price: "2.850.000",
-  }
+    model: "ACTYON 1.5 GDI Turbo Benzinli 4x4 A/T (2025)",
+    price: "2.858.700",
+  },
 ];
 
 export const actyonGallery = [

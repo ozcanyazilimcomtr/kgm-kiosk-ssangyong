@@ -1,11 +1,10 @@
-
 export const mussoGrandModels = [
   {
     name: "Platinum D2.2 4x2",
     slug: "musso_grand_platinum_d22_4x2",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand4.png"),
     desc_item: ["Otomatik", "Dizel", "4x2"],
-    desc: "₺1.410.000'den başlayan fiyatlarla",
+    desc: "₺1.418.894'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -216,7 +215,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_d22_4x4",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand8.png"),
     desc_item: ["Otomatik", "Dizel", "4x4"],
-    desc: "₺1.489.412'den başlayan fiyatlarla",
+    desc: "₺1.514.165'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -428,7 +427,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_plus_d22_4x2",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand3.png"),
     desc_item: ["Otomatik", "Dizel", "4x2"],
-    desc: "₺1.560.000'den başlayan fiyatlarla",
+    desc: "₺1.568.894'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -644,7 +643,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_plus_d22_4x4",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand7.png"),
     desc_item: ["Otomatik", "Dizel", "4x4"],
-    desc: "₺1.624.412'den başlayan fiyatlarla",
+    desc: "₺1.649.165'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -874,19 +873,19 @@ export const mussoGrandModels = [
 export const mussoGrandPrices = [
   {
     model: "Platinum D2.2 4x2 Otomatik (2024 Model)",
-    price: "1.410.000",
+    price: "1.418.894",
   },
   {
     model: "Platinum D2.2 4x4 Otomatik (2024 Model)",
-    price: "1.489.412",
+    price: "1.514.165",
   },
   {
     model: "Platinum Plus D2.2 4x2 Otomatik (2024 Model)",
-    price: "1.560.000",
+    price: "1.568.894",
   },
   {
     model: "Platinum Plus D2.2 4x4 Otomatik (2024 Model)",
-    price: "1.624.412",
+    price: "1.649.165",
   },
   {
     model: "Edition D2.2 4x4 Otomatik (2023 Model)",
