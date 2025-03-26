@@ -74,7 +74,7 @@ export default function Page() {
               }}
             >
               <car.logoSvgComponent
-                width={index === 0 ? "70%" : "100%"}
+                width={index === 0 ? "70%" : "90%"}
                 height={"100%"}
               />
             </View>
@@ -98,12 +98,12 @@ export default function Page() {
           height={deviceWidth * 0.15}
           contentFit="contain"
           style={{
-            marginTop: 0,
+            marginTop: deviceHeight * 0.05,
           }}
         />
         <Image
           source={require("../kgm-uygulama-dosyalar/gorsel/sahsuvaroglu_grup_guvencesiyle.png")}
-          width={deviceWidth * 0.255}
+          width={deviceWidth * 0.225}
           height={deviceWidth * 0.07}
           contentFit="contain"
           style={{
