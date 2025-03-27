@@ -887,10 +887,6 @@ export const mussoGrandPrices = [
     model: "Platinum Plus D2.2 4x4 Otomatik (2024 Model)",
     price: "1.649.165",
   },
-  {
-    model: "Edition D2.2 4x4 Otomatik (2023 Model)",
-    price: "1.832.776",
-  },
 ];
 
 export const mussoGrandColors = [

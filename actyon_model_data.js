@@ -267,7 +267,7 @@ export const actyonColors = [
 
 export const actyonPrices = [
   {
-    model: "ACTYON 1.5 GDI Turbo Benzinli 4x4 A/T (2025)",
+    model: "ACTYON 1.5 GDI Turbo Benzinli 4x4 A/T (2024)",
     price: "2.758.700",
   },
   {
