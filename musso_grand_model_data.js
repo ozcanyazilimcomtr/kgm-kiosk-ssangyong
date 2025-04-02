@@ -872,20 +872,24 @@ export const mussoGrandModels = [
 
 export const mussoGrandPrices = [
   {
-    model: "Platinum D2.2 4x2 Otomatik (2024 Model)",
+    model: "MUSSO GRAND D2.2 4X2 A/T PLATINUM (2024 GSR)",
     price: "1.418.894",
   },
   {
-    model: "Platinum D2.2 4x4 Otomatik (2024 Model)",
-    price: "1.514.165",
-  },
-  {
-    model: "Platinum Plus D2.2 4x2 Otomatik (2024 Model)",
+    model: "MUSSO GRAND D2.2 4X2 A/T PLATINUM PLUS - (2024 GSR)",
     price: "1.568.894",
   },
   {
-    model: "Platinum Plus D2.2 4x4 Otomatik (2024 Model)",
+    model: "MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS - (2024 GSR)",
     price: "1.649.165",
+  },
+  {
+    model: "MUSSO GRAND D2.2 4X2 A/T PLATINUM PLUS - (2025 GSR)",
+    price: "1.668.894",
+  },
+   {
+    model: "MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS - (2025 GSR)",
+    price: "1.749.165",
   },
 ];
 
