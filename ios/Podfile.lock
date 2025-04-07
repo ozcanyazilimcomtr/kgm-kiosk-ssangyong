@@ -3,7 +3,7 @@ PODS:
   - DoubleConversion (1.1.6)
   - EXConstants (17.0.8):
     - ExpoModulesCore
-  - Expo (52.0.40):
+  - Expo (52.0.42):
     - ExpoModulesCore
   - ExpoAsset (11.0.5):
     - ExpoModulesCore
@@ -11,19 +11,15 @@ PODS:
     - ExpoModulesCore
   - ExpoFont (13.0.4):
     - ExpoModulesCore
-  - ExpoHead (4.0.19):
+  - ExpoHead (4.0.20):
     - ExpoModulesCore
-  - ExpoImage (2.0.6):
+  - ExpoImage (2.0.7):
     - ExpoModulesCore
     - libavif/libdav1d
     - SDWebImage (~> 5.19.1)
     - SDWebImageAVIFCoder (~> 0.11.0)
     - SDWebImageSVGCoder (~> 1.7.0)
   - ExpoKeepAwake (14.0.3):
-    - ExpoModulesCore
-  - ExpoKiosk (0.9.0):
-    - ExpoModulesCore
-  - ExpoKioskControl (1.0.0):
     - ExpoModulesCore
   - ExpoLinearGradient (14.0.2):
     - ExpoModulesCore
@@ -1786,8 +1782,6 @@ DEPENDENCIES:
   - ExpoHead (from `../node_modules/expo-router/ios`)
   - ExpoImage (from `../node_modules/expo-image/ios`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
-  - ExpoKiosk (from `../node_modules/expo-kiosk/ios`)
-  - ExpoKioskControl (from `../node_modules/expo-kiosk-control/ios`)
   - ExpoLinearGradient (from `../node_modules/expo-linear-gradient/ios`)
   - ExpoLinking (from `../node_modules/expo-linking/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
@@ -1891,10 +1885,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-image/ios"
   ExpoKeepAwake:
     :path: "../node_modules/expo-keep-awake/ios"
-  ExpoKiosk:
-    :path: "../node_modules/expo-kiosk/ios"
-  ExpoKioskControl:
-    :path: "../node_modules/expo-kiosk-control/ios"
   ExpoLinearGradient:
     :path: "../node_modules/expo-linear-gradient/ios"
   ExpoLinking:
@@ -2041,15 +2031,13 @@ SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   EXConstants: fcfc75800824ac2d5c592b5bc74130bad17b146b
-  Expo: 4f645fc381f88e6acacfb0dcb63b45fb9eff25b9
+  Expo: e8f11c8e0290deca7be9254569e23f884b95a777
   ExpoAsset: 48386d40d53a8c1738929b3ed509bcad595b5516
   ExpoFileSystem: 42d363d3b96f9afab980dcef60d5657a4443c655
   ExpoFont: f354e926f8feae5e831ec8087f36652b44a0b188
-  ExpoHead: caaccab2474a1b1f3be62eb1d493f9d30c704f94
-  ExpoImage: c6d1f54445f38766650052aedf5396a74bb96fff
+  ExpoHead: cee2d16ef197aaadb0ac481cf221a663636eb074
+  ExpoImage: d840b256050f4428d2942bc2b6e9251f9e0d7021
   ExpoKeepAwake: b0171a73665bfcefcfcc311742a72a956e6aa680
-  ExpoKiosk: 880951bb4f1f5d8efe38b46a4d9a210d3b511fe7
-  ExpoKioskControl: 401993e59bb619fa9b6bc950a5d0f5b864a1a89a
   ExpoLinearGradient: 35ebd83b16f80b3add053a2fd68cc328ed927f60
   ExpoLinking: 8d12bee174ba0cdf31239706578e29e74a417402
   ExpoModulesCore: 98297c2cc7977c43740a2e52d850d94ac8dbf176

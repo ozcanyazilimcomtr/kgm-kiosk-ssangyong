@@ -217,8 +217,17 @@ export default function Page() {
           }}
         />
         <View style={{ marginTop: 4 }}>
-          <Text style={{ fontSize: 8, textAlign: "center", color: "#fff", fontFamily: "league-spartan-regular" }}>
-            Tavsiye edilen kampanyalı anahtar teslim fiyatlarına ÖTV, KDV dahil olup, MTV, Trafik Sigortası ve Trafik Tescil Masrafları hariçtir.
+          <Text
+            style={{
+              fontSize: 18,
+              textAlign: "center",
+              color: "#fff",
+              fontFamily: "league-spartan-regular",
+            }}
+          >
+            Tavsiye edilen kampanyalı anahtar teslim fiyatlarına ÖTV, KDV ,MTV,
+            Trafik Tescil Masrafları Dahil Olup, Trafik Sigortası Masrafları
+            Dahil Değildir.
           </Text>
         </View>
       </View>
