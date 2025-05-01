@@ -272,7 +272,7 @@ export const actyonPrices = [
   },
   {
     model: "ACTYON 1.5 GDI Turbo Benzinli 4x4 A/T (2025)",
-    price: "2.858.700",
+    price: "2.888.700",
   },
 ];
 

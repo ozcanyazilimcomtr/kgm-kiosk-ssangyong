@@ -226,11 +226,11 @@ export const torresEvxModels = [
 
 export const torresEvxPrices = [
   {
-    model: "Torres EVX 4x2 (2024 Model)",
+    model: "Torres EVX 4x2 Elektrik (2024 Model)",
     price: "1.890.388",
   },
     {
-    model: "Torres EVX 4x2 (2025 Model)",
+    model: "Torres EVX 4x2 Elektrik (2025 Model)",
     price: "1.920.388",
   },
 ];
