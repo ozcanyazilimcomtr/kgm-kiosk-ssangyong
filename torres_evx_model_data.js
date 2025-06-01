@@ -8,7 +8,7 @@ export const torresEvxModels = [
       "Elektrik",
       "4x2",
     ],
-    desc: "₺1.890.388'den başlayan fiyatlarla",
+    desc: "₺1.920.388'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -225,10 +225,6 @@ export const torresEvxModels = [
 ];
 
 export const torresEvxPrices = [
-  {
-    model: "Torres EVX 4x2 Elektrik (2024 Model)",
-    price: "1.890.388",
-  },
     {
     model: "Torres EVX 4x2 Elektrik (2025 Model)",
     price: "1.920.388",
