@@ -1,12 +1,13 @@
 import ActyonHomeLogo from "./svgs/ActyonHomeLogo";
 import { MussoGrandColorLogo, MussoGrandHomeLogo } from "./svgs/MussoGrandHomeLogo";
 import { TorresColorLogo, TorresHomeLogo, TorresBlackLogo } from "./svgs/TorresHomeLogo";
+import { KorandoWhiteLogo, KorandoColorLogo } from "./svgs/KorandoHomeLogo";
 import { TorresEvxColorLogo, TorresEvxHomeLogo, TorresEvxBlackLogo } from "./svgs/TorresEvxHomeLogo";
 import { torresColors, torresGallery, torresModels, torresPrices, torresVideo } from "./torres_model_data";
 import { torresEvxColors, torresEvxGallery, torresEvxModels, torresEvxPrices, torresEvxVideo } from "./torres_evx_model_data";
 import { actyonColors, actyonGallery, actyonModels, actyonPrices, actyonVideo } from "./actyon_model_data";
 import { mussoGrandColors, mussoGrandModels, mussoGrandPrices, mussoGrandGallery, mussoGrandVideo } from "./musso_grand_model_data";
-
+import { korandoColors, korandoGallery, korandoModels, korandoPrices, korandoVideo } from "./korando_model_data";
 export const cars = [
   {
     name: "Torres",
@@ -59,5 +60,18 @@ export const cars = [
     colors: mussoGrandColors,
     gallery: mussoGrandGallery,
     video: mussoGrandVideo,
+  },
+  {
+    name: "Korando",
+    mainImage: require("./korando_ana_gorsel.png"),
+    logoSvgComponent: KorandoWhiteLogo,
+    colorLogoSvgComponent: KorandoWhiteLogo,
+    blackLogoSvgComponent: KorandoColorLogo,
+    slug: "korando",
+    models: korandoModels,
+    prices: korandoPrices,
+    colors: korandoColors,
+    gallery: korandoGallery,
+    video: korandoVideo,
   },
 ];

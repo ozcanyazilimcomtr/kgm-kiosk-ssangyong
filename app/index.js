@@ -13,166 +13,136 @@ export default function Page() {
   const deviceWidth = Dimensions.get("window").width;
   const deviceHeight = Dimensions.get("window").height;
 
+  // Üst sıradaki araçlar için boyutlar
+  const TOP_CARD_WIDTH = deviceWidth * 0.35;
+  const TOP_CARD_HEIGHT = deviceHeight * 0.22;
+
+  // Alt sıradaki araçlar için daha küçük boyutlar
+  const BOTTOM_CARD_WIDTH = deviceWidth * 0.3;
+  const BOTTOM_CARD_HEIGHT = deviceHeight * 0.2;
+
+  // Araç kartı render fonksiyonu
+  const renderCarCard = (car, isTopRow = false, index = null) => {
+    if (!car) return null;
+
+    const cardWidth = isTopRow ? TOP_CARD_WIDTH : BOTTOM_CARD_WIDTH;
+    const cardHeight = isTopRow ? TOP_CARD_HEIGHT : BOTTOM_CARD_HEIGHT;
+
+    // Özel boyutlandırma gereken araçlar
+    const isFirstCar = index === 0;
+    const isMiddleBottomCar = !isTopRow && index === 3;
+    const needsSpecialSize = isFirstCar || isMiddleBottomCar;
+    const imageScale = needsSpecialSize ? 0.85 : 0.95;
+
+    return (
+      <TouchableOpacity
+        style={{
+          width: cardWidth,
+          height: cardHeight,
+          alignItems: "center",
+          justifyContent: "center",
+          position: "relative",
+          marginBottom: isTopRow ? 35 : 30,
+        }}
+        onPress={() => {
+          router.push(`/car/${car.slug}`);
+        }}
+        key={car.slug}
+      >
+        <View style={{
+          width: "100%",
+          height: "100%",
+          alignItems: "center",
+          justifyContent: "center"
+        }}>
+          <Image
+            source={car.mainImage}
+            contentFit="contain"
+            style={{
+              width: `${imageScale * 100}%`,
+              height: `${imageScale * 100}%`,
+              transform: needsSpecialSize ? [{ scale: 0.9 }] : []
+            }}
+          />
+        </View>
+        <View
+          style={{
+            width: "100%",
+            height: "25%",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "absolute",
+            bottom: isTopRow ? -25 : -25,
+          }}
+        >
+
+          <car.logoSvgComponent width="70%" height="100%" />
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
   return (
     <View
       style={{
         flex: 1,
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-between",
+        paddingVertical: 15,
       }}
     >
+      {/* Üst sıra araçlar */}
       <View
         style={{
-          flex: 1,
           width: "100%",
           flexDirection: "row",
-          justifyContent: "space-between",
-          padding: 20,
+          justifyContent: "space-evenly",
+          paddingHorizontal: 10,
+          marginTop: 10,
         }}
       >
-        {cars.slice(0, 2).map((car, index) => (
-          <TouchableOpacity
-            style={{
-              width: deviceWidth * (index === 0 ? 0.43 : 0.42),
-              height: deviceHeight * (index === 0 ? 0.3 : 0.32),
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop: index === 0 ? 15 : -5,
-              position: "relative",
-            }}
-            onPress={() => {
-              router.push(`/car/${car.slug}`);
-            }}
-            key={index}
-          >
-            <View
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Image
-                source={car.mainImage}
-                contentFit="contain"
-                style={{
-                  width: "100%",
-                  height: index === 0 ? "95%" : "110%",
-                  marginTop: index === 1 ? -20 : -15,
-                }}
-              />
-            </View>
-            <View
-              style={{
-                width: "100%",
-                height: "30%",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: -10,
-                position: "absolute",
-                bottom: -40,
-              }}
-            >
-              <car.logoSvgComponent
-                width={index === 0 ? "70%" : "90%"}
-                height={"100%"}
-              />
-            </View>
-          </TouchableOpacity>
-        ))}
+        {renderCarCard(cars[0], true, 0)}
+        {renderCarCard(cars[1], true, 1)}
       </View>
 
+      {/* Orta kısım logolar */}
       <View
         style={{
-          flex: 1,
           width: "100%",
           alignItems: "center",
           justifyContent: "center",
-          gap: 35,
-          marginVertical: 25,
+          gap: 15,
+          marginVertical: 5,
         }}
       >
         <Image
           source={require("../kgm-uygulama-dosyalar/gorsel/kgm_logo_.png")}
-          width={deviceWidth * 1}
-          height={deviceWidth * 0.15}
+          width={deviceWidth * 0.9}
+          height={deviceWidth * 0.13}
           contentFit="contain"
-          style={{
-            marginTop: deviceHeight * 0.05,
-          }}
         />
         <Image
           source={require("../kgm-uygulama-dosyalar/gorsel/sahsuvaroglu_grup_guvencesiyle.png")}
-          width={deviceWidth * 0.225}
-          height={deviceWidth * 0.07}
+          width={deviceWidth * 0.2}
+          height={deviceWidth * 0.06}
           contentFit="contain"
-          style={{
-            marginTop: -50,
-          }}
         />
       </View>
 
+      {/* Alt sıra araçlar */}
       <View
         style={{
-          flex: 1,
           width: "100%",
           flexDirection: "row",
-          justifyContent: "space-between",
-          padding: 20,
-          marginTop: -20,
-          marginBottom: 40,
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          paddingHorizontal: 5,
         }}
       >
-        {cars.slice(2, 4).map((car, index) => (
-          <TouchableOpacity
-            style={{
-              width: deviceWidth * (index === 0 ? 0.45 : 0.45),
-              height: deviceHeight * (index === 0 ? 0.32 : 0.32),
-              alignItems: "center",
-              justifyContent: "center",
-              marginBottom: 0,
-              position: "relative",
-              marginTop: -30,
-            }}
-            onPress={() => {
-              router.push(`/car/${car.slug}`);
-            }}
-            key={index}
-          >
-            <View
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Image
-                source={car.mainImage}
-                contentFit="contain"
-                style={{
-                  width: "100%",
-                  height: "110%",
-                  marginTop: index === 1 ? -20 : -15,
-                }}
-              />
-            </View>
-            <View
-              style={{
-                width: "100%",
-                height: "30%",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: -20,
-                position: "absolute",
-                bottom: index === 0 ? -45 : -40,
-              }}
-            >
-              <car.logoSvgComponent
-                width={index === 0 ? "75%" : "100%"}
-                height={"100%"}
-              />
-            </View>
-          </TouchableOpacity>
-        ))}
+        {renderCarCard(cars[2], false, 2)}
+        {renderCarCard(cars[3], false, 3)}
+        {renderCarCard(cars[4], false, 4)}
       </View>
     </View>
   );
