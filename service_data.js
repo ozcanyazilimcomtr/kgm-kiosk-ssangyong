@@ -451,4 +451,12 @@ export const services = [
     is_dealer: true,
     id: 91,
   },
+  {
+    title: "SİSTEM OTOMOTİV",
+    address: "Vezirçiftliği Mah. D130 Karayolu Cad. No:116 Başiskele / Kocaeli",
+    phone: "+902622331010",
+    is_service: true,
+    is_dealer: true,
+    id: 92,
+  },
 ];

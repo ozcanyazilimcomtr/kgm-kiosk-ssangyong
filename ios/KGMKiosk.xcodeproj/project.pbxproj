@@ -10,14 +10,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		35DB7CBEEFD54EED833F2F7A /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DB6C601BF4C288BB491EB /* noop-file.swift */; };
+		3BCE2A3FA1C5488B834EEE25 /* league_spartan_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F4BDE29274C5EA33CE7BA /* league_spartan_regular.ttf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		4E2503626B18464EBC75C767 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793727186FA24EDCAA201C97 /* noop-file.swift */; };
-		5809938D5A56E41C3666AAE1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F179FAA71C376E588B11109F /* PrivacyInfo.xcprivacy */; };
+		83F5C60A7E8D43C39378D3DF /* league_spartan_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57421D277B964FBFAE5536F4 /* league_spartan_bold.ttf */; };
 		96905EF65AED1B983A6B3ABC /* libPods-KGMKiosk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-KGMKiosk.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		D16CBC7C219A41F9A1E23356 /* league_spartan_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF50507F8B2D4DAA942B25CD /* league_spartan_bold.ttf */; };
-		EE504F72FFEE41E28411F4A8 /* league_spartan_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC168EA5446D4CD99B601AAC /* league_spartan_regular.ttf */; };
+		F2A1524F9EBB511CFF34920C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 257BAB9D566A706113158858 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,17 +27,17 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KGMKiosk/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KGMKiosk/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KGMKiosk/main.m; sourceTree = "<group>"; };
-		54A560352AC14713BAB78AF8 /* KGMKiosk-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "KGMKiosk-Bridging-Header.h"; path = "KGMKiosk/KGMKiosk-Bridging-Header.h"; sourceTree = "<group>"; };
+		257BAB9D566A706113158858 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = KGMKiosk/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3FE174AA455C42FB87002170 /* KGMKiosk-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "KGMKiosk-Bridging-Header.h"; path = "KGMKiosk/KGMKiosk-Bridging-Header.h"; sourceTree = "<group>"; };
+		57421D277B964FBFAE5536F4 /* league_spartan_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = league_spartan_bold.ttf; path = ../fonts/league_spartan_bold.ttf; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-KGMKiosk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KGMKiosk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7DB6C601BF4C288BB491EB /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "KGMKiosk/noop-file.swift"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-KGMKiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMKiosk.debug.xcconfig"; path = "Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk.debug.xcconfig"; sourceTree = "<group>"; };
-		793727186FA24EDCAA201C97 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "KGMKiosk/noop-file.swift"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-KGMKiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMKiosk.release.xcconfig"; path = "Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk.release.xcconfig"; sourceTree = "<group>"; };
+		7D6F4BDE29274C5EA33CE7BA /* league_spartan_regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = league_spartan_regular.ttf; path = ../fonts/league_spartan_regular.ttf; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = KGMKiosk/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		BF50507F8B2D4DAA942B25CD /* league_spartan_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = league_spartan_bold.ttf; path = ../fonts/league_spartan_bold.ttf; sourceTree = "<group>"; };
-		DC168EA5446D4CD99B601AAC /* league_spartan_regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = league_spartan_regular.ttf; path = ../fonts/league_spartan_regular.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F179FAA71C376E588B11109F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = KGMKiosk/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-KGMKiosk/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,9 +63,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				793727186FA24EDCAA201C97 /* noop-file.swift */,
-				54A560352AC14713BAB78AF8 /* KGMKiosk-Bridging-Header.h */,
-				F179FAA71C376E588B11109F /* PrivacyInfo.xcprivacy */,
+				6A7DB6C601BF4C288BB491EB /* noop-file.swift */,
+				3FE174AA455C42FB87002170 /* KGMKiosk-Bridging-Header.h */,
+				257BAB9D566A706113158858 /* PrivacyInfo.xcprivacy */,
 			);
 			name = KGMKiosk;
 			sourceTree = "<group>";
@@ -77,6 +77,16 @@
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-KGMKiosk.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E2F5F39808C48D792810AA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F4BDE29274C5EA33CE7BA /* league_spartan_regular.ttf */,
+				57421D277B964FBFAE5536F4 /* league_spartan_bold.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -95,7 +105,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
-				DC548965553D48F6915B50B0 /* Resources */,
+				5E2F5F39808C48D792810AA7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -144,16 +154,6 @@
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
-		DC548965553D48F6915B50B0 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DC168EA5446D4CD99B601AAC /* league_spartan_regular.ttf */,
-				BF50507F8B2D4DAA942B25CD /* league_spartan_bold.ttf */,
-			);
-			name = Resources;
-			path = "";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,13 +162,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KGMKiosk" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				5B3BB676A8BF3E1BEF001619 /* [Expo] Configure project */,
+				802B065702AB56E90EC1925D /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				845E235D0382EB14D50704FD /* [CP] Embed Pods Frameworks */,
+				4375D7785A617E1C6BAB0909 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,9 +218,9 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				EE504F72FFEE41E28411F4A8 /* league_spartan_regular.ttf in Resources */,
-				D16CBC7C219A41F9A1E23356 /* league_spartan_bold.ttf in Resources */,
-				5809938D5A56E41C3666AAE1 /* PrivacyInfo.xcprivacy in Resources */,
+				3BCE2A3FA1C5488B834EEE25 /* league_spartan_regular.ttf in Resources */,
+				83F5C60A7E8D43C39378D3DF /* league_spartan_bold.ttf in Resources */,
+				F2A1524F9EBB511CFF34920C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,24 +264,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B3BB676A8BF3E1BEF001619 /* [Expo] Configure project */ = {
+		4375D7785A617E1C6BAB0909 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-KGMKiosk/expo-configure-project.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -317,23 +316,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		845E235D0382EB14D50704FD /* [CP] Embed Pods Frameworks */ = {
+		802B065702AB56E90EC1925D /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KGMKiosk/Pods-KGMKiosk-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-KGMKiosk/expo-configure-project.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -345,7 +345,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				4E2503626B18464EBC75C767 /* noop-file.swift in Sources */,
+				35DB7CBEEFD54EED833F2F7A /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

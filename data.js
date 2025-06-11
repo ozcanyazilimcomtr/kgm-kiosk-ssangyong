@@ -11,7 +11,7 @@ import { korandoColors, korandoGallery, korandoModels, korandoPrices, korandoVid
 export const cars = [
   {
     name: "Torres",
-    mainImage: require("./torres_ana_gorsel.png"),
+    mainImage: require("./ana_ekran_gorseller/torres_ana_gorsel.png"),
     logoSvgComponent: TorresHomeLogo,
     colorLogoSvgComponent: TorresColorLogo,
     blackLogoSvgComponent: TorresBlackLogo,
@@ -24,7 +24,7 @@ export const cars = [
   },
   {
     name: "Torres Evx",
-    mainImage: require("./torres_evx_ana_gorsel.png"),
+    mainImage: require("./ana_ekran_gorseller/torres_evx_ana_gorsel.png"),
     logoSvgComponent: TorresEvxHomeLogo,
     colorLogoSvgComponent: TorresEvxColorLogo,
     blackLogoSvgComponent: TorresEvxBlackLogo,
@@ -37,7 +37,7 @@ export const cars = [
   },
   {
     name: "Actyon",
-    mainImage: require("./kgm-uygulama-dosyalar/actyon_1.png"),
+    mainImage: require("./ana_ekran_gorseller/actyon_1.png"),
     logoSvgComponent: ActyonHomeLogo,
     colorLogoSvgComponent: ActyonHomeLogo,
     blackLogoSvgComponent: ActyonHomeLogo,
@@ -50,7 +50,7 @@ export const cars = [
   },
   {
     name: "Musso Grand",
-    mainImage: require("./musso_grand_ana_gorsel.png"),
+    mainImage: require("./ana_ekran_gorseller/musso_grand_ana_gorsel.png"),
     logoSvgComponent: MussoGrandHomeLogo,
     colorLogoSvgComponent: MussoGrandColorLogo,
     blackLogoSvgComponent: MussoGrandColorLogo,
@@ -63,7 +63,7 @@ export const cars = [
   },
   {
     name: "Korando",
-    mainImage: require("./korando_ana_gorsel.png"),
+    mainImage: require("./ana_ekran_gorseller/korando_ana_gorsel.png"),
     logoSvgComponent: KorandoWhiteLogo,
     colorLogoSvgComponent: KorandoWhiteLogo,
     blackLogoSvgComponent: KorandoColorLogo,

@@ -2,9 +2,9 @@ export const korandoModels = [
   {
     name: "Titanium 4x2 AT Benzinli",
     slug: "korando_titanium_4x2_at_benzinli",
-    image: require("./korando_ana_gorsel.png"),
+    image: require("./ana_ekran_gorseller/korando_ana_gorsel.png"),
     desc_item: ["Otomatik", "Benzinli", "4x2"],
-    desc: "₺1.900.000'den başlayan fiyatlarla",
+    desc: "₺1.908.700'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -193,11 +193,11 @@ export const korandoModels = [
 export const korandoPrices = [
   {
     model: "Titanium 4x2 AT Benzinli (2025)",
-    price: "1.950.000",
+    price: "1.958.700",
   },
   {
     model: "Titanium 4x2 AT Benzinli (2024)",
-    price: "1.900.000",
+    price: "1.908.700",
   },
 ];
 

@@ -2,7 +2,7 @@ export const torresEvxModels = [
   {
     name: "Torres Evx 4x2",
     slug: "torres_evx_4x2",
-    image: require("./torres_evx_ana_gorsel.png"),
+    image: require("./ana_ekran_gorseller/torres_evx_ana_gorsel.png"),
     desc_item: [
       "Otomatik",
       "Elektrik",

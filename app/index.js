@@ -13,36 +13,25 @@ export default function Page() {
   const deviceWidth = Dimensions.get("window").width;
   const deviceHeight = Dimensions.get("window").height;
 
-  // Üst sıradaki araçlar için boyutlar
-  const TOP_CARD_WIDTH = deviceWidth * 0.35;
-  const TOP_CARD_HEIGHT = deviceHeight * 0.22;
-
-  // Alt sıradaki araçlar için daha küçük boyutlar
-  const BOTTOM_CARD_WIDTH = deviceWidth * 0.3;
-  const BOTTOM_CARD_HEIGHT = deviceHeight * 0.2;
+  // Tüm kartlar için eşit boyut
+  const CARD_WIDTH = deviceWidth * 0.32;
+  const CARD_HEIGHT = deviceHeight * 0.27;
 
   // Araç kartı render fonksiyonu
-  const renderCarCard = (car, isTopRow = false, index = null) => {
+  const renderCarCard = (car, needsSmallSize = false, scales = {small: 0.95, large: 1.15}) => {
     if (!car) return null;
 
-    const cardWidth = isTopRow ? TOP_CARD_WIDTH : BOTTOM_CARD_WIDTH;
-    const cardHeight = isTopRow ? TOP_CARD_HEIGHT : BOTTOM_CARD_HEIGHT;
-
-    // Özel boyutlandırma gereken araçlar
-    const isFirstCar = index === 0;
-    const isMiddleBottomCar = !isTopRow && index === 3;
-    const needsSpecialSize = isFirstCar || isMiddleBottomCar;
-    const imageScale = needsSpecialSize ? 0.85 : 0.95;
+    const imageScale = needsSmallSize ? scales.small : scales.large;
 
     return (
       <TouchableOpacity
         style={{
-          width: cardWidth,
-          height: cardHeight,
+          width: CARD_WIDTH,
+          height: CARD_HEIGHT,
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
-          marginBottom: isTopRow ? 35 : 30,
+          marginBottom: 30,
         }}
         onPress={() => {
           router.push(`/car/${car.slug}`);
@@ -61,7 +50,7 @@ export default function Page() {
             style={{
               width: `${imageScale * 100}%`,
               height: `${imageScale * 100}%`,
-              transform: needsSpecialSize ? [{ scale: 0.9 }] : []
+              transform: needsSmallSize ? [{ scale: 0.9 }] : []
             }}
           />
         </View>
@@ -72,15 +61,21 @@ export default function Page() {
             alignItems: "center",
             justifyContent: "center",
             position: "absolute",
-            bottom: isTopRow ? -25 : -25,
+            bottom: -45,
           }}
         >
-
           <car.logoSvgComponent width="70%" height="100%" />
         </View>
       </TouchableOpacity>
     );
   };
+
+  // Actyon modelini bul
+  const actyonModel = cars.find(car => car.name === "Actyon");
+  // Torres EVX modelini bul
+  const torresEvxModel = cars.find(car => car.name === "Torres Evx");
+  // Diğer araçları filtrele
+  const otherCars = cars.filter(car => car.name !== "Actyon" && car.name !== "Torres Evx");
 
   return (
     <View
@@ -89,60 +84,59 @@ export default function Page() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-between",
-        paddingVertical: 15,
+        paddingVertical: 150,
       }}
     >
-      {/* Üst sıra araçlar */}
+      {/* Üst sıra: Actyon - Logo - Torres EVX */}
       <View
         style={{
           width: "100%",
           flexDirection: "row",
-          justifyContent: "space-evenly",
+          justifyContent: "space-between",
+          alignItems: "center",
           paddingHorizontal: 10,
           marginTop: 10,
         }}
       >
-        {renderCarCard(cars[0], true, 0)}
-        {renderCarCard(cars[1], true, 1)}
+        {/* Sol: Actyon */}
+        {renderCarCard(actyonModel, false)}
+
+        {/* Orta: Logolar */}
+        <View
+          style={{
+            width: CARD_WIDTH,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            source={require("../kgm_logo_birlesik.png")}
+            style={{
+              width: CARD_WIDTH * 1.5,
+              height: CARD_WIDTH * 0.6,
+            }}
+            contentFit="contain"
+          />
+        </View>
+
+        {/* Sağ: Torres EVX */}
+        {renderCarCard(torresEvxModel, false)}
       </View>
 
-      {/* Orta kısım logolar */}
-      <View
-        style={{
-          width: "100%",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 15,
-          marginVertical: 5,
-        }}
-      >
-        <Image
-          source={require("../kgm-uygulama-dosyalar/gorsel/kgm_logo_.png")}
-          width={deviceWidth * 0.9}
-          height={deviceWidth * 0.13}
-          contentFit="contain"
-        />
-        <Image
-          source={require("../kgm-uygulama-dosyalar/gorsel/sahsuvaroglu_grup_guvencesiyle.png")}
-          width={deviceWidth * 0.2}
-          height={deviceWidth * 0.06}
-          contentFit="contain"
-        />
-      </View>
-
-      {/* Alt sıra araçlar */}
+      {/* Alt sıra: Diğer 3 araç */}
       <View
         style={{
           width: "100%",
           flexDirection: "row",
-          justifyContent: "space-evenly",
+          justifyContent: "space-between",
           alignItems: "center",
-          paddingHorizontal: 5,
+          paddingHorizontal: 10,
+          marginTop: 20,
         }}
       >
-        {renderCarCard(cars[2], false, 2)}
-        {renderCarCard(cars[3], false, 3)}
-        {renderCarCard(cars[4], false, 4)}
+        {renderCarCard(otherCars[0], false)}
+        {renderCarCard(otherCars[1], false)}
+        {renderCarCard(otherCars[2], false)}
       </View>
     </View>
   );
