@@ -1,19 +1,19 @@
-import { StatusBar } from "expo-status-bar";
-import { Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity, View, FlatList } from "react-native";
-import { useFonts } from "expo-font";
-import { styles } from "../style";
-import { SvgCssUri } from "react-native-svg/css";
-import MussoGrandHomeLogo from "../svgs/MussoGrandHomeLogo";
 import { Image } from "expo-image";
-import TorresHomeLogo from "../svgs/TorresHomeLogo";
-import { cars } from "../data";
-import { services } from "../service_data";
 import { router } from "expo-router";
+import {
+  Dimensions,
+  FlatList,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import ServiceLocationItem from "../component/service_location_item";
+import { services } from "../service_data";
 
 export default function Page() {
   const deviceWidth = Dimensions.get("window").width;
 
+  console.log(services.length);
 
   return (
     <View
@@ -101,9 +101,7 @@ export default function Page() {
             gap: 12,
           }}
           renderItem={({ item }) => {
-            return (
-              <ServiceLocationItem location={item} />
-            );
+            return <ServiceLocationItem location={item} />;
           }}
         />
       </View>

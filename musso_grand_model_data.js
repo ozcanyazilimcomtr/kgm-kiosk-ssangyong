@@ -4,7 +4,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_d22_4x2",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand4.png"),
     desc_item: ["Otomatik", "Dizel", "4x2"],
-    desc: "₺1.468.894'den başlayan fiyatlarla",
+    desc: "₺1.498.894'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -661,19 +661,19 @@ export const mussoGrandModels = [
 export const mussoGrandPrices = [
   {
     model: "MUSSO GRAND D2.2 4X2 A/T PLATINUM (2024 GSR)",
-    price: "1.468.894",
+    price: "1.498.894",
   },
   {
     model: "MUSSO GRAND D2.2 4X2 A/T PLATINUM PLUS - (2024 GSR)",
-    price: "1.618.894",
+    price: "1.648.894",
   },
   {
     model: "MUSSO GRAND D2.2 4X2 A/T PLATINUM PLUS - (2025 GSR)",
-    price: "1.743.894",
+    price: "1.793.894",
   },
-   {
+  {
     model: "MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS - (2025 GSR)",
-    price: "1.824.165",
+    price: "1.874.165",
   },
 ];
 
@@ -703,7 +703,6 @@ export const mussoGrandColors = [
     image: require("./arac_gorseller/musso_grand/musso_grand_galaksi_gri.png"),
   },
 ];
-
 
 export const mussoGrandGallery = [
   require("./kgm-uygulama-dosyalar/gorsel/musso_grand_gallery1.jpg"),

@@ -311,7 +311,7 @@ export const services = [
     id: 69,
   },
   {
-    title: "ERKAYA OTOMOTİV",
+    title: "KARAKUCAK OTOMATIV",
     address: "ATAKENT MAH. 6052 SK. NO: 1 IÇ KAPI NO: 1 KARAKÖPRÜ / ŞANLIURFA",
     phone: "0850 281 6311",
     is_service: false,
@@ -319,9 +319,9 @@ export const services = [
     id: 72,
   },
   {
-    title: "ERKAYA OTOMOTİV",
+    title: "KARAKUCAK OTOMATIV",
     address: "KADIKENDİ MAH. 8728 CAD. NO: 20E EYYÜBİYE ŞANLIURFA",
-    phone: "+908502816311",
+    phone: "0850 281 6311",
     is_service: true,
     is_dealer: false,
     id: 73,
