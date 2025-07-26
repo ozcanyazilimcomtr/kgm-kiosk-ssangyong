@@ -9,18 +9,18 @@ export default function Page() {
 
   // Responsive boyutlandırma - orijinal oranları koruyarak
   const MIN_CARD_WIDTH = 200;
-  const MAX_CARD_WIDTH = 350;
+  const MAX_CARD_WIDTH = 400;
 
   // Ekran boyutuna göre dinamik kart boyutu hesaplama
   const calculateCardSize = () => {
-    const baseCardWidth = deviceWidth * 0.32; // Orijinal oran korundu
+    const baseCardWidth = deviceWidth * 4; // Orijinal oran korundu
 
     // Min ve max değerler arasında sınırla
     const cardWidth = Math.max(
       MIN_CARD_WIDTH,
       Math.min(MAX_CARD_WIDTH, baseCardWidth)
     );
-    const cardHeight = deviceHeight * 0.27; // Orijinal oran korundu
+    const cardHeight = deviceHeight * 0.33; // Orijinal oran korundu
 
     return { cardWidth, cardHeight };
   };
@@ -124,7 +124,7 @@ export default function Page() {
             source={require("../kgm_logo_birlesik.png")}
             style={{
               width: cardWidth * 1.5, // Orijinal oran korundu
-              height: cardWidth * 0.6, // Orijinal oran korundu
+              height: cardWidth * 0.8, // Orijinal oran korundu
             }}
             contentFit="contain"
           />

@@ -4,7 +4,7 @@ export const torresModels = [
     slug: "torres_4x2",
     image: require("./kgm-uygulama-dosyalar/torres_mavi.png"),
     desc_item: ["Otomatik", "Benzinli", "4x2"],
-    desc: "₺2.398.700'den başlayan fiyatlarla",
+    desc: "₺2.380.380'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -467,11 +467,11 @@ export const torresModels = [
 export const torresPrices = [
   {
     model: "4x2 1.5 GDI Turbo (2025 Model)",
-    price: "2.398.700",
+    price: "2.380.380",
   },
-   {
+  {
     model: "4x4 1.5 GDI Turbo (2025 Model)",
-    price: "2.598.700",
+    price: "2.758.700",
   },
 ];
 

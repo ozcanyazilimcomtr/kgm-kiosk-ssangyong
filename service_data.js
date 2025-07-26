@@ -459,4 +459,29 @@ export const services = [
     is_dealer: true,
     id: 92,
   },
+  {
+    title: "2Y OTOMOTİV",
+    address:
+      "Fatih Sultan Mehmet Bulvarı No:466/A Batı Sitesi - Yenimahalle / Ankara",
+    phone: "+903128190666",
+    is_service: true,
+    is_dealer: true,
+    id: 93,
+  },
+  {
+    title: "AKORT OTOMOTİV",
+    address: "Sanayi Mah.Durdu Yetkin Cad. NO: 15/1 Şehitkamil/ GAZİANTEP",
+    phone: "+903425032744",
+    is_service: false,
+    is_dealer: true,
+    id: 94,
+  },
+  {
+    title: "EGE DURMAZLAR OTOMOTİV",
+    address: "Karacaoğlan Mah. 6167 Sk. NO: 18/A Bornova/ İZMİR",
+    phone: "+902323882222",
+    is_service: true,
+    is_dealer: true,
+    id: 95,
+  },
 ];
