@@ -2,7 +2,7 @@
   "expo": {
     "name": "KGM Kiosk",
     "slug": "kgm-kios",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "scheme": "kgm-kios",
     "icon": "./assets/app_icon.jpeg",
     "userInterfaceStyle": "light",
