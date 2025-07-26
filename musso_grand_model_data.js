@@ -215,7 +215,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_plus_d22_4x2",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand3.png"),
     desc_item: ["Otomatik", "Dizel", "4x2"],
-    desc: "₺1.618.894'den başlayan fiyatlarla",
+    desc: "₺1.648.894'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -431,7 +431,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_plus_d22_4x4",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand7.png"),
     desc_item: ["Otomatik", "Dizel", "4x4"],
-    desc: "₺1.824.165'den başlayan fiyatlarla",
+    desc: "₺1.874.165'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
