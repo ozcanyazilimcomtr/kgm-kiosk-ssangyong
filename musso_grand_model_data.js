@@ -431,7 +431,7 @@ export const mussoGrandModels = [
     slug: "musso_grand_platinum_plus_d22_4x4",
     image: require("./kgm-uygulama-dosyalar/gorsel/musso_grand7.png"),
     desc_item: ["Otomatik", "Dizel", "4x4"],
-    desc: "",
+    desc: "₺2.700.000'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -673,7 +673,7 @@ export const mussoGrandPrices = [
   },
   {
     model: "MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS - (2025 GSR)",
-    price: "-",
+    price: "2.700.000",
   },
 ];
 

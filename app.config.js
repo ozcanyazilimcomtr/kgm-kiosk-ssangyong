@@ -2,7 +2,7 @@ export default {
   expo: {
     name: "KGM Kiosk",
     slug: "kgm-kios",
-    version: "1.6.2",
+    version: "1.6.3",
     orientation: "landscape",
     scheme: "kgm-kios",
     icon: "./assets/app_icon.jpeg",
