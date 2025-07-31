@@ -4,7 +4,7 @@ export const torresEvxModels = [
     slug: "torres_evx_4x2",
     image: require("./ana_ekran_gorseller/torres_evx_ana_gorsel.png"),
     desc_item: ["Otomatik", "Elektrik", "4x2"],
-    desc: "₺2.290.388'den başlayan fiyatlarla",
+    desc: "₺2.390.388'den başlayan fiyatlarla",
     technic_properties: [
       {
         name: "Genel Bakış",
@@ -223,7 +223,7 @@ export const torresEvxModels = [
 export const torresEvxPrices = [
   {
     model: "Torres EVX 4x2 Elektrik (2025 Model)",
-    price: "2.290.388",
+    price: "2.390.388",
   },
 ];
 
